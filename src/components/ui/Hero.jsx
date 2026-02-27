@@ -1,19 +1,26 @@
 import { Button, ButtonOutline } from "../common/Button"
+import Slider from "./Slider"
 import heroImage from "/public/bg-hero.jpg"
+import heroImage2 from "/public/bg-hero2.png"
+import ScrollReveal from "scrollreveal"
+import { useEffect } from "react";
 
 const Hero = () => {
+  useEffect(() => {
+      ScrollReveal().reveal(".reveal", {
+        distance: "60px",
+        duration: 3000,
+        easing: "ease-in-out",
+        origin: "bottom",
+        interval: 200,
+        reset: false, // animation happens once
+      });
+    }, []);
   return (
-    <div className='h-80 bg-purple-800 overflow-hidden relative'>
-      <img src={heroImage} alt="loading"/>
-      <div className="w-100 absolute left-10 top-10 bg-white p-5 rounded-sm">
-        <h1 className="font-semibold text-3xl">Master tomorrow's skills today</h1>
-        <p className="my-3 text-sm leading-6">Power up your AI, career, and life skills with the most up-to-date, expert-led learning.</p>
-        <div className="flex gap-3">
-            <Button text={"Get Personal Plan"}/>
-            <ButtonOutline text={"Learn AI"}/>
-        </div>
-      </div>
+    <div className="mt-20 reveal">
+      <Slider/>
     </div>
+    
   )
 }
 

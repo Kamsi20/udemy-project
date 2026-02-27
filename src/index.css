@@ -3,3 +3,18 @@
 body{
     background-size: cover;
 }
+
+.swiper{
+    width: 1200px !important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+
+  background-color: azure;
+  height: 40px !important;
+  width: 40px !important;
+  padding: 10px;
+  border-radius: 50%;
+  color: black !important;
+
+}
