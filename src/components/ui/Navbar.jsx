@@ -35,7 +35,7 @@ const Navbar = () => {
 
             <nav className=' lg:w-[1300px] mx-auto flex gap-5 justify-between items-center p-3'>
                 <div className='flex w-7/8 mx-auto  items-center gap-5'>
-                    <Link to={"/"} > <img src="logo.png" /></Link>
+                    <Link to={"/"} > <img src="logo.png" className='w-45'/></Link>
                    <Link to={"/learnmore"}> <small>Explore</small></Link>
                     <div className='w-full flex items-center gap-2 p-2 border-1 border-gray-600 rounded-full outline-none hover:opacity-85'>
                         <div><FaSearch size={12} color='gray' /></div>
@@ -94,24 +94,24 @@ export const TeachOnKamsi = () => {
                 <p className='text-4xl font-semibold mx-100 my-20'>So many reasons to start</p>
                 <div className='flex mb-0'>
                     <div className='w-90 mx-15 flex flex-col   items-center mb-30'>
-                        <img src='/public/43.png' className='w-30 ' />
+                        <img src='43.png' className='w-30 ' />
                         <p className='font-semibold text-xl '>Teach your way</p>
                         <p className='font-light '>Publish the course you want, in the way you want, and always have control of your own content.</p>
                     </div>
                     <div className='w-90 mx-15 flex flex-col   items-center mb-30'>
-                        <img src='/public/44.png' className='w-30 ' />
+                        <img src='44.png' className='w-30 ' />
                         <p className='font-semibold text-xl '>Inspire learners</p>
                         <p className='font-light '>Teach what you know and help learners explore their interests, gain new skills, and advance their careers.</p>
                     </div>
                     <div className='w-90 mx-15 flex flex-col   items-center mb-30'>
-                        <img src='/public/45.png' className='w-30 ' />
+                        <img src='45.png' className='w-30 ' />
                         <p className='font-semibold text-xl '>Get rewarded</p>
                         <p className='font-light '>Expand your professional network, build your expertise, and earn money on each paid enrollment.</p>
                     </div>
 
                 </div>
                 <div>
-                    <img src='/public/46.png' />
+                    <img src='46.png' />
                 </div>
             </div>
         </div>

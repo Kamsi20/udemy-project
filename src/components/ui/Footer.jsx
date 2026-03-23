@@ -36,7 +36,7 @@ const Footer = () => {
       </div>
       <div className='lg:w-[1200px] mx-auto flex flex-row justify-between items-start border-t-2 border-gray-500 '>
         <div className='flex    '>
-          <Link to={"/"} ><img src='public\loogof.png' alt='img' className='w-45  ' /></Link>
+          <Link to={"/"} ><img src='loogof.png' alt='img' className='w-45  ' /></Link>
           <small> <p className='font-light flex mt-11'><AiOutlineCopyrightCircle /> 2026 Kamsi, lnc. </p></small>
         </div>
         <div>
