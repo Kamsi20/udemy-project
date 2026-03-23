@@ -35,7 +35,7 @@ const Navbar = () => {
 
             <nav className=' lg:w-[1300px] mx-auto flex gap-5 justify-between items-center p-3'>
                 <div className='flex w-7/8 mx-auto  items-center gap-5'>
-                    <Link to={"/"} ><img src='public\logo.png' alt='img' className='w-45 ' /></Link>
+                    <Link to={"/"} ><img src='public/logo.png' alt='img' className='w-45 ' /></Link>
                    <Link to={"/learnmore"}> <small>Explore</small></Link>
                     <div className='w-full flex items-center gap-2 p-2 border-1 border-gray-600 rounded-full outline-none hover:opacity-85'>
                         <div><FaSearch size={12} color='gray' /></div>
@@ -81,7 +81,7 @@ export const TeachOnKamsi = () => {
     return (
         <div className='lg:w-[1300px] mx-auto'>
             <div
-                className="h-130 bg-cover bg-center"
+                className="h-120 bg-cover bg-center"
                 style={{ backgroundImage: `url(${aa})` }}
             >
                 <div className=' bg-gray-140  h-50 w-95  ml-10 p-5  mt-20 pt-30'>
