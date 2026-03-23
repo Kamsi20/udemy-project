@@ -5,6 +5,7 @@ import { FaRegLightbulb } from "react-icons/fa";
 import { ButtonWidth } from "../common/Button";
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
+import { Link } from "react-router-dom";
 
 
 const Man = () => {
@@ -39,7 +40,7 @@ const Man = () => {
           </small>
 
           <div className=" mt-5 ">
-            <ButtonWidth text={"Learn more "} />
+           <Link to={'/learnmore'}> <ButtonWidth text={"Learn more "} /></Link>
             <small><p className="mx-3 mt-1 font-light">Starting at 7,500/month</p></small>
           </div>
 

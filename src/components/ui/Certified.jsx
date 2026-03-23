@@ -25,7 +25,7 @@ const Certified = () => {
   return (
 
 
-    <div className='lg:w-[1300px] mx-auto grid grid-cols-5 h-100 gap-5 bg-gray-900 text-white m-5 rounded-2xl p-20 reveal'>
+    <div className='lg:w-[1200px] mx-auto grid grid-cols-5 h-100 gap-5 bg-gray-900 text-white m-5 rounded-2xl py-20 px-15   reveal'>
       <div className='col-span-2'>
         <p className='text-3xl font-semibold'>Get certified and get ahead in your career</p>
         <p className='mt-3 font-light mr-20 '> Prep for certifications with comprehensive courses, practice tests, and special offers on exam vouchers.</p>

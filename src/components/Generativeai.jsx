@@ -5,16 +5,20 @@ import india from "/public/web.png"
 import indiaa from "/public/web2.png"
 import Gencard from './common/Gencard'
 import { IoCheckmark } from "react-icons/io5";
+import SingleCourse from './SingleCourse'
+import DisplayCourse from './Displaycourse'
+import Data from '../data/Data'
 
 const Generativeai = () => {
+  // const course = Data.find((item) => item.courseId === "course1");
   return (
     <div className=' lg:w-[1300px] mx-auto m-5 pt-25' >
       <div className=''>
         <h1 className='text-2xl font-semibold mb-3 ml-10 '>Generative AI (Gen AI) Courses</h1>
-        <p className='mb-15 ml-10'>Generative AI (GenAI) relates to  <Link className='text-purple-700 font-bold ' to={"https://www.udemy.com/courses/business/"}>IT & Software, Businesses</Link></p>
+        <p className='mb-15 ml-10'>Generative AI (GenAI) relates to  IT & Software, Businesses</p>
 
       </div>
-      <div className=' flex justify-between  border-1 border-gray-400 p-8 rounded-md'>
+      <div className=' flex flex-row  border-1 border-gray-400 p-8 rounded-md'>
         <div>
           <h2 className='text-xl font-semibold w-100'>Looking to advance your skills in Generative AI (GenAI)? We've got you.</h2> <br />
           <p className='font-semilight text-lg pr-10'>Get everything you need to reach your goals in one convenient bundle.</p><br />
@@ -29,11 +33,14 @@ const Generativeai = () => {
             <button className='bg-green-200 p-2 rounded-md text-sm font-semibold'>Special Bundle Price</button> <br />
           </div>
 
-          <ButtonWidthPurples text={"Add all to cart"} />
+          <Link to={"/cartcontent"}><ButtonWidthPurples text={"Add all to cart"} onclick={() => alert('Added to Cart!')} /></Link>
         </div>
         <div className='flex float-right gap-6 p-4'>
-          <Gencard text='Complete web development course' texta='Hitesh Cloudhary' textb="4.6" textc='N10,900' bg={india} />
-          <  Gencard text='Complete web development course' texta='Hitesh Cloudhary Piyush Garg' textb="4.6" textc='N10,900' bg={indiaa} />
+          {
+            Data.slice(0, 2).map((course) => (
+              <Gencard key={course.courseId} course={course} />
+            ))
+          }
         </div>
       </div>
     </div>

@@ -8,6 +8,7 @@ import { Link } from "react-router-dom"
 import Chatbot from "../Chatbot"
 import Chatbotbtn from "../ui/Chatbotbtn"
 
+
 const Home = () => {
   return (
     <div>
@@ -17,6 +18,7 @@ const Home = () => {
       <Certified />
       <Books />
       <Chatbotbtn />
+    
     </div>
   )
 }

@@ -5,6 +5,7 @@ import { FaStarHalfAlt } from "react-icons/fa";
 import { BsPatchCheck } from "react-icons/bs";
 import { FaTag } from "react-icons/fa6";
 import { IoCheckmark } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 
 
@@ -20,7 +21,7 @@ const Learnmore = () => {
           </div>
           <p className='text-3xl font-semibold pb-10 '>Save 20% on your first year</p>
           <p className='font-light text-lg pb-7'>Go further at work and in life with access to a collection of top-rated courses in tech, business, and more.</p>
-          <ButtonWidthPurp text={"Save now"} />
+          <Link to={"/paymentpage"}><ButtonWidthPurp text={"Save now"} onClick={()=>alert("Welcome to your course!")}/></Link>
           <p className='py-2 text-sm font-light '>20% off first year of Personal Plan yearly access. Discount offer only valid on Feb 9 – 15, 2026. Existing Personal Plan subscribers do not qualify. Country restrictions apply. Subscription auto-renews at then-current regular yearly pricing after first year unless canceled.</p>
         </div>
         <img src="10.png" alt='img ' className='w-150 float-right items-end' />
@@ -88,12 +89,12 @@ const Learnmore = () => {
         </div>
         <ul className='flex pt-10 gap-7 pb-2'>
           <li className='font-bold'>Web Development</li>
-          <li className='font-semibold'>Data science</li>
+          {/* <li className='font-semibold'>Data science</li>
           <li className='font-semibold'>IT Certifications</li>
           <li className='font-semibold'>Graphic Design & Illustration</li>
           <li className='font-semibold'>Digital Marketing</li>
           <li className='font-semibold'>Leadership</li>
-          <li className='font-semibold'>Communication</li>
+          <li className='font-semibold'>Communication</li> */}
         </ul>
         <hr className='pb-5  border-gray-400' />
 

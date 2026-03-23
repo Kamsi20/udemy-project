@@ -2,6 +2,7 @@ import React from 'react'
 import heroImage from "/public/bg-hero.jpg"
 import heroImage2 from "/public/bg-hero2.png"
 import { Button, ButtonOutline } from "../common/Button"
+import { Link } from 'react-router-dom'
 
 const SliderContent = ({topic, image, text}) => {
   return (
@@ -13,8 +14,8 @@ const SliderContent = ({topic, image, text}) => {
         <h1 className="font-semibold text-3xl">{topic}</h1>
         <p className="my-3 text-sm leading-6">{text}</p>
         <div className="flex gap-3">
-          <Button text={"Get Personal Plan"} />
-          <ButtonOutline text={"Learn AI"} />
+         <Link to={"Learnmore"}> <Button text={"Get Personal Plan"} /></Link>
+         <Link to={"LearnAI"}> <ButtonOutline text={"Learn AI"} /></Link>
         </div>
       </div>
       
