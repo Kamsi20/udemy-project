@@ -44,7 +44,7 @@ const CartContent = () => {
                     <div className='flex flex-col'>
                       <p> {course.courseName}</p>
                       <p className='my-2'>{course.createdBy}</p>
-                      <p className='absolute right-130 flex gap-2'>  {formatter.format(course.coursePrice)} <small><FaTag className='text-purple-600 mt-1.5' /></small></p>
+                      <p className='pl-100  flex gap-2'>  {formatter.format(course.coursePrice)} <small><FaTag className='text-purple-600 mt-1.5' /></small></p>
                       <div className='flex gap-4'>
                         <span className="flex items-center gap-1 text-xs bg-purple-600 text-white px-2 py-1 rounded w-20">
                           <BsPatchCheck />

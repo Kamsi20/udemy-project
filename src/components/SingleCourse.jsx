@@ -24,7 +24,7 @@ const SingleCourse = () => {
   }
 
   return (
-    <div className=' mt-25'>
+    <div className='  lg:w-[1300px] mx-auto mt-25'>
 
       {
         user ? <div>

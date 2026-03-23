@@ -19,14 +19,17 @@ import Chatbot from './components/Chatbot'
 import Layout from './components/ui/auth/Layout'
 
 import SingleCourse from './components/SingleCourse'
-import DisplayCourse from './components/Displaycourse'
+
 import { AboutUs, AccessabilityStatement, ContactUs, HelpAndSupport, PrivacyPolicy, SiteMap, TermsAndConditions } from './components/NavbarDetails'
 import PrivateRoute from './components/PrivateRoute'
 import { AuthContext } from './context/FormControlContext'
 import Profile from './components/util/Profile'
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import CartContent from './components/CartContent'
+import CartContent from './components/CartContent';
+
+import DCourse from './components/DCourse'
+
 
 const App = () => {
   const location = useLocation();
@@ -56,12 +59,8 @@ const App = () => {
          
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
-
           <Route path='/login' element={<PrivateRoute><SingleCourse /></PrivateRoute> } />
-
-          
-
-
+       
           <Route path='/generativeai' element={<Generativeai />} />
           <Route path='/itcertifications' element={<ITcertifications />} />
           <Route path='/datascience' element={<Datascience />} />
@@ -94,7 +93,7 @@ const App = () => {
           <Route path='/profile' element={<Profile />} /> 
 
           <Route path='/course/:id' element={<SingleCourse/>} />
-          <Route path='/courses' element={<DisplayCourse />} />
+          <Route path='/courses' element={<DCourse />} />
 
         </Routes>
       </main>

@@ -5,8 +5,7 @@ import india from "/public/web.png"
 import indiaa from "/public/web2.png"
 import Gencard from './common/Gencard'
 import { IoCheckmark } from "react-icons/io5";
-import SingleCourse from './SingleCourse'
-import DisplayCourse from './Displaycourse'
+
 import Data from '../data/Data'
 
 const Generativeai = () => {

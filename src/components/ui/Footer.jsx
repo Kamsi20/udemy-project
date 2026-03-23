@@ -19,7 +19,7 @@ const Footer = () => {
         <div >
           <h2 className='text-xl font-bold mb-4'>Discover Kamsi</h2>
           <ul className='font-light'>
-            <li>Teach on Kamsi</li>
+           <Link to={'/teachonkamsi'}> <li>Teach on Kamsi</li></Link>
            <Link to={"/helpandsupport"} > <li>Help and support</li></Link>
           </ul>
         </div>

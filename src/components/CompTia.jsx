@@ -38,7 +38,7 @@ const CompTia = () => {
         < div className=' flex font-light gap-3 text-sm py-4'>
           <p className=' border-r-1 border-gray-400 flex gap-2 pr-3'><MdOutlinePeopleOutline className='text-lg' /> 4,751,564 Learners </p>
           <p>Prapare for your certifications with these courses.</p>
-          <p><a href={"https://www.udemy.com/browse/certification/comptia-certifications/"} />Learn more</p>
+        
         </div >
         <p className='font-light  w-200'>
           CompTIA (Computing Technology Industry Association) is a recognized provider of IT certifications, offering a wide range of certifications suitable for various levels of expertise. CompTIA certifications such as A+ and ITF+ are widely respected across the IT industry and provide a solid foundation for those pursuing various IT career paths.
@@ -50,7 +50,7 @@ const CompTia = () => {
           <p className='font-light pb-9'>Dive into Top Certifications that learners on Udemy are preparing for</p>
         </div>
         <div className='flex gap-5'>
-          <Link to={'/comptiacourse'}><ComptiaCard text='CompTIA A+ Cerfification' texta='1,378,929 learners ' bg={tia} /></Link>
+          <Link to={'/comptiacourse'}><ComptiaCard text='CompTIA A+ Course Cerfification' texta='1,378,929 learners ' bg={tia} /></Link>
           <Link to={'/comptiasecurity'}><ComptiaCard text='CompTIA Security+ Certification ' texta='1,298,900 learners' bg={sec} /></Link>
           <Link to={'/comptiacourse'}><ComptiaCard text='CompTIA Network+ Certification' texta='938,000 learners' bg={net} /></Link>
           <Link to={'/comptiasecurity'}><ComptiaCard text='Comptia CySA + ce Certifiation' texta='297,000 learners' bg={net} /></Link>

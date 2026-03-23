@@ -17,7 +17,7 @@ export const AboutUs = () => {
   return (
 
 
-    <div className='my-38 mx-30  '>
+    <div className='lg:w-[1300px] mx-auto  my-38 mx-30  '>
       <h1 className='mx-100 mb-15 text-4xl font-semibold'>About Us</h1>
       <p className="bg-cover bg-center py-20 px-10  rounded-2xl shadow-3xl bg-gray-200 text-black text-lg mb-10">
         Our organization was established with the goal of providing reliable, efficient, and innovative digital solutions that improve the way individuals and organizations interact with technology. We believe that modern technology should not only simplify processes but also empower people to access services, information, and tools in a fast, secure, and convenient manner.
@@ -44,7 +44,7 @@ export const AboutUs = () => {
 export const ContactUs = () => {
 
   return (
-    <div className='my-38 mx-10  '>
+    <div className='lg:w-[1300px] mx-auto  my-38 mx-10  '>
       <h1  className='mx-100 mb-15 text-4xl font-semibold'>Contact Us</h1>
       <ul className='flex gap-10 mb-15  justify-center'>
         <div className=' mb-15 border-r-1 pr-5'>
@@ -110,7 +110,7 @@ export const ContactUs = () => {
 
 export const HelpAndSupport = () => {
   return (
-    <div className='mt-30 mx-15 '>
+    <div className='lg:w-[1300px] mx-auto  mt-30 mx-15 '>
       <h1 className='mx-100 mb-15 text-4xl font-semibold'>Help And Support</h1>
       <p className="bg-cover bg-center py-20 px-10  rounded-2xl shadow-3xl bg-gray-200 text-black text-lg mb-10">
         Our Help and Support section is designed to assist users in understanding how to effectively use our platform and resolve any issues that may arise. We understand that users may occasionally encounter challenges while navigating digital systems, and we are committed to providing the necessary resources to help them overcome these difficulties.
@@ -142,7 +142,7 @@ export const HelpAndSupport = () => {
 
 export const AccessabilityStatement = () => {
   return (
-    <div className='mt-30 mx-15 '>
+    <div className='lg:w-[1300px] mx-auto  mt-30 mx-15 '>
       <h1 className='mx-90 mb-15 text-4xl font-semibold'> Accessability Statement</h1>
       <p className="bg-cover bg-center py-20 px-10  rounded-2xl shadow-3xl bg-gray-200 text-black text-lg mb-10">
         Our organization is committed to ensuring that our website is accessible to the widest possible audience, including individuals with disabilities or limitations that may affect how they interact with digital platforms.
@@ -173,7 +173,7 @@ export const AccessabilityStatement = () => {
 
 export const PrivacyPolicy = () => {
   return (
-    <div className='mt-30 mx-15  '>
+    <div className='lg:w-[1300px] mx-auto  mt-30 mx-15  '>
       <p className='mx-110 mb-15 text-4xl font-semibold'>Privacy Policy</p>
       <div className="bg-cover bg-center py-20 px-10  rounded-2xl shadow-3xl bg-gray-200 text-black text-lg mb-10">
         Protecting the privacy of our users is a fundamental responsibility that we take seriously. This Privacy Policy explains how we collect, use, store, and safeguard the personal information of individuals who interact with our platform.
@@ -207,7 +207,7 @@ export const PrivacyPolicy = () => {
 
 export const SiteMap = () => {
   return (
-    <div className='mt-30 mx-15  '>
+    <div className='lg:w-[1300px] mx-auto  mt-30 mx-15  '>
       <p className='mx-110 mb-15 text-4xl font-semibold'>The Sitemap</p>
       <div className="bg-cover bg-center py-20 px-10  rounded-2xl shadow-3xl bg-gray-200 text-black text-lg mb-10">
         The sitemap serves as a structured overview of the pages and sections available on our website. Its primary purpose is to help users navigate the platform easily and locate information efficiently.
@@ -237,7 +237,7 @@ export const SiteMap = () => {
 
 export const TermsAndConditions = () => {
   return (
-    <div className='mt-30 mx-15  '>
+    <div className='lg:w-[1300px] mx-auto  mt-30 mx-15  '>
       <p className='mx-85 mb-15 text-4xl font-semibold'>The Terms and Condition</p>
       <div className="bg-cover bg-center py-20 px-10  rounded-2xl shadow-3xl bg-gray-200 text-black text-lg mb-10">
         The Terms and Conditions page outlines the rules, guidelines, and legal agreements that govern the use of our website and services. By accessing or using our platform, users agree to comply with these terms.

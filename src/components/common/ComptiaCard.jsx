@@ -14,7 +14,7 @@ export const ComptiaCard = ({ bg, text = "", texta = "", textb = "", }) => {
   }
 
   return (
-    <div className='  border-gray-300 border-1 w-90 h-35' >
+    <div className='  border-gray-300 border-1 w-71 h-35' >
 
       <div style={style}className='m-5'>
         

@@ -6,7 +6,7 @@ export const Card = ({ bg, text = "Learning AI today",  }) => {
 
     const style = {
         background: `url(${bg})`,
-        backgroundPosition: "top",
+        // backgroundPosition: "top",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
          
