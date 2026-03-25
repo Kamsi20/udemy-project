@@ -33,7 +33,7 @@ const Navbar = () => {
         <div className='shadow-lg fixed top-0 left-0 w-full h-[80px] bg-white z-50 shadow-md'>
 
 
-            <nav className=' lg:w-[1300px] mx-auto flex gap-5 justify-between items-center p-3'>
+            <nav className=' x flex gap-5 justify-between items-center p-3'>
                 <div className='flex w-7/8 mx-auto  items-center gap-5'>
                     <Link to={"/"} > <img src="logo.png" className='w-45'/></Link>
                    <Link to={"/learnmore"}> <small>Explore</small></Link>

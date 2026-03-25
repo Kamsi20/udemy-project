@@ -47,7 +47,7 @@ const App = () => {
 
 
   return (
-    <div className='overflow-x-hidden'>
+    <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-x-hidden'>
       <header>
         {location.pathname !== "/login" && <Navbar />}
         
