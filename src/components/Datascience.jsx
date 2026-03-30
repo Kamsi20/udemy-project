@@ -79,13 +79,17 @@ const Datascience = () => {
 export default Datascience
 
 
+
+
+
+
 export const LearnAI =() =>{
   return (
     <div>
        <div className='lg:w-[1300px] mx-auto mt-20'>
       <div className='bg-gray-100 p-15'>
-        <h1 className='text-5xl font-bold  '>Artificial Intelligence (AI) Courses</h1>
-        <p className='pt-10 pr-85'>AI courses teach machine simulation of human intelligence processes. Exploring AI is crucial for building smart systems and applications and is important for developers, researchers, and anyone interested in cutting-edge technology.</p>
+        <h1 className='lg:text-5xl font-bold text-2xl  '>Artificial Intelligence (AI) Courses</h1>
+        <p className='pt-10 lg:pr-85 justify-center'>AI courses teach machine simulation of human intelligence processes. Exploring AI is crucial for building smart systems and applications and is important for developers, researchers, and anyone interested in cutting-edge technology.</p>
 
         <div className='flex gap-5 mt-5'>
           <p className='font-light text-sm pr-3 border-r-1 border-gray-400'>

@@ -8,6 +8,12 @@ import { FaArrowRight } from "react-icons/fa"
 import CardR from '../common/CardR'
 import { Link } from 'react-router-dom'
 import ScrollReveal from "scrollreveal";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Autoplay } from 'swiper/modules';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation'
 
 const Certified = () => {
 
@@ -25,8 +31,8 @@ const Certified = () => {
   return (
 
 
-    <div className='lg:w-[1200px] mx-auto grid grid-cols-5 h-100 gap-5 bg-gray-900 text-white m-5 rounded-2xl py-20 px-15   reveal'>
-      <div className='col-span-2'>
+    <div className='lg:w-[1200px] mx-auto grid lg:grid-cols-5  lg:h-100 gap-5 bg-gray-900 text-white m-5 rounded-2xl py-20 px-15   reveal'>
+      <div className='lg:col-span-2'>
         <p className='text-3xl font-semibold'>Get certified and get ahead in your career</p>
         <p className='mt-3 font-light mr-20 '> Prep for certifications with comprehensive courses, practice tests, and special offers on exam vouchers.</p>
         <div className='absolute mt-6 '  ><ButtonGray text={"Explore certifications and vouchers"} />
@@ -34,11 +40,41 @@ const Certified = () => {
         </div>
       </div>
 
-      <div className='w-full h-60 overflow-hidden col-span-3 relative'>
-        <div className='flex justify-between items-center gap-5'>
+      <div className='w-full h-60 overflow-hidden col-span-3 relative lg:mt-1 mt-15'>
+        <div className='hidden md:grid grid-cols-3 gap-5'>
           <Link to={"compTia"} ><div > <CardR text='CompTIA ' texta='Cloud, Networking, Cybersecurity' bg={img1} /></div></Link>
-         <Link to={"aws"} > <div ><CardR text='AWS' texta='Cloud, AI, Coding, Networking' bg={img2} /></div></Link>
+          <Link to={"aws"} > <div ><CardR text='AWS' texta='Cloud, AI, Coding, Networking' bg={img2} /></div></Link>
           <Link to={"pmi"} ><div ><CardR text='PMI ' texta='Project and Program Management' bg={img3} /></div></Link>
+        </div>
+
+        <div className="block md:hidden">
+          <Swiper
+            spaceBetween={0}
+            slidesPerView={1}
+            breakpoints={{
+              768: {
+                slidesPerView: 3,
+                allowTouchMove: false,
+              },
+            }}
+
+            loop={true}
+            autoplay={{
+              delay: 3000,
+            }}
+            navigation
+            modules={[Navigation, Autoplay]}
+          >
+            <SwiperSlide>
+              <Link to={"compTia"} ><div > <CardR text='CompTIA ' texta='Cloud, Networking, Cybersecurity' bg={img1} /></div></Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link to={"aws"} > <div ><CardR text='AWS' texta='Cloud, AI, Coding, Networking' bg={img2} /></div></Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link to={"pmi"} ><div ><CardR text='PMI ' texta='Project and Program Management' bg={img3} /></div></Link>
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
 

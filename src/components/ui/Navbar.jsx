@@ -28,28 +28,30 @@ import { TiArrowBack } from "react-icons/ti";
 const Navbar = () => {
     const { user, handleLogout } = useContext(AuthContext)
     console.log(user)
+    const [open, setOpen] = useState(false);
+    // const [show, setShow] = useState(false);
 
     return (
-        <div className='shadow-lg fixed top-0 left-0 w-full h-[80px] bg-white z-50 shadow-md'>
+        <div className='shadow-md fixed top-0 left-0 w-full bg-white z-50'>
 
 
-            <nav className=' x flex gap-5 justify-between items-center p-3'>
-                <div className='flex w-7/8 mx-auto  items-center gap-5'>
-                    <Link to={"/"} > <img src="logo.png" className='w-45'/></Link>
-                   <Link to={"/learnmore"}> <small>Explore</small></Link>
-                    <div className='w-full flex items-center gap-2 p-2 border-1 border-gray-600 rounded-full outline-none hover:opacity-85'>
+            <nav className=' flex justify-between items-center px-4 py-3'>
+                <div className='flex items-center gap-4'>
+                    <Link to={"/"} > <img src="logo.png" className="w-28 md:w-36" /></Link>
+                    <Link to={"/learnmore"} className="hidden md:block"> <small>Explore</small></Link>
+                    <div className="hidden md:flex  items-center gap-2 p-2 border border-gray-400 rounded-full">
                         <div><FaSearch size={12} color='gray' /></div>
                         <form className='w-full '>
-                            <input type='search' placeholder='Search for anything' className='outline-none w-full' />
+                            <input type='search' placeholder='Search for anything' className='outline-none w-80' />
                         </form>
                     </div>
                 </div>
-                <div className='flex items-center ml-15 gap-8 w-full'>
+                <div className="hidden md:flex items-center gap-6">
                     <ul className='flex gap-5'>
-                        {/* <li className='hover:text-purple-900'>Plans & Pricing</li> */}
 
-                       <Link to={"/aboutus"}> <li>About Us</li></Link> 
-                       <Link to={"/contactus"}> <li>Contact Us</li></Link> 
+
+                        <Link to={"/aboutus"}> <li>About Us</li></Link>
+                        <Link to={"/contactus"}> <li>Contact Us</li></Link>
                         <Link to={"/teachonkamsi"}><li className='hover:text-purple-900'>Teach on Kamsi</li></Link>
                     </ul>
                     <Link to={"/cartcontent"}>  <div><IoCartOutline size={22} /></div></Link>
@@ -64,8 +66,55 @@ const Navbar = () => {
                         user ? <Button text={"Log out"} onclick={handleLogout} /> : ""
                     }
                 </div>
-            </nav>
 
+
+
+                {/* MOBILE BUTTON */}
+                <button
+                    className="md:hidden text-2xl"
+                    onClick={() => setOpen(!open)}
+                >
+                    ☰
+                </button>
+            </nav>
+            {open && (
+                <div className="md:hidden bg-white shadow-md flex flex-col items-center gap-4 py-4">
+
+                    {/* Search */}
+                    <div className="flex w-[90%] items-center gap-2 p-2 border rounded-full">
+                        <FaSearch size={12} />
+                        <input
+                            type="search"
+                            placeholder="Search..."
+                            className="outline-none w-full"
+                        />
+                    </div >
+
+                    <div  onClick={() => setOpen(!open)} className= ' flex flex-row gap-2'>
+                    
+                    <Link to={"/learnmore"}>Explore</Link>
+                        <Link to={"/aboutus"}>About Us</Link>
+                        <Link to={"/contactus"}>Contact Us</Link>
+                        <Link to={"/teachonkamsi"}>Teach</Link>
+
+                        <Link to={"/cartcontent"}>
+                            <IoCartOutline size={22} />
+                        </Link>
+                    </div>
+
+                    {user ? (
+                        <>
+                            <Profile />
+                            <button onClick={handleLogout}>Log out</button>
+                        </>
+                    ) : (
+                        < div  onClick={() => setOpen(!open)} className='mx-3'>
+                            <Link to={"/signup"}>Sign up</Link>
+                            <Link to={"/login"}>Log in</Link>
+                        </div>
+                    )}
+                </div>
+            )}
         </div>
     )
 }
