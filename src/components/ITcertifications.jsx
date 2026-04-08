@@ -30,7 +30,7 @@ const ITcertifications = () => {
       </div>
       <div>
         <div className=' mx-130 p-5 mt-5 font-bold'><p>Most popular</p></div>
-        <div className='flex border-1 border-gray-700 p-2 gap-7 px-7  '>
+        <div className='flex lg:flex-row flex-col border-1 border-gray-700 p-2 gap-7 px-7  '>
           {
             Data.slice(3, 7).map((course) => (
               <Gencard key={course.courseId} course={course} />

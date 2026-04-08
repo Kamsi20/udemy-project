@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { Button, ButtonOutline, ButtonWidthPurples } from '../../common/Button'
+import { Button, ButtonOutline, Buttons, Buttonss, ButtonWidth, ButtonWidthPurpl, ButtonWidthPurple, ButtonWidthPurples } from '../../common/Button'
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import { FaApple } from "react-icons/fa";
@@ -54,23 +54,24 @@ const Signup = () => {
           <Link to={"/"}><Button text={"Back to home"} /></Link>
 
         </div>
-        <div className=' flex justify-between  m-25  '>
+        <div className=' flex  justify-between  lg:m-25 m-10  '>
 
-          <div className='w-100  '>
-            <div className='font-semibold text-4xl mb-10'>
+          <div className='lg:w-100  '>
+            <div className='font-semibold lg:text-4xl text-3xl mb-10'>
               <h1 >Signup to continue your learning journey</h1>
             </div>
             <div className=''>
               <form onSubmit={handleSubmit}>
-                <input type="text" value={formData.username} onChange={handleChange} name="username" placeholder="FullName" className='border-1 border-gray-600 hover:border-purple-700 rounded-md w-110 h-15 font-light p-3 text-gray-80 mb-5' />
+                <input type="text" value={formData.username} onChange={handleChange} name="username" placeholder="FullName" className='border-1 border-gray-600 hover:border-purple-700 rounded-md lg:w-110 w-90 h-15 font-light p-3 text-gray-80 mb-5' />
                 <br />
-                <input type="text" value={formData.email} onChange={handleChange} name="email" placeholder="Email" className='border-1 border-gray-600 hover:border-purple-700 rounded-md w-110 h-15 font-light p-3 text-gray-80 mb-5' />
+                <input type="text" value={formData.email} onChange={handleChange} name="email" placeholder="Email" className='border-1 border-gray-600 hover:border-purple-700 rounded-md lg:w-110 w-90 h-15 font-light p-3 text-gray-80 mb-5' />
                 <br />
 
 
-                <input type="text" value={formData.password} onChange={handleChange} name="password" placeholder="Password" className='border-1 border-gray-600 hover:border-purple-700 rounded-md w-110 h-15 font-light p-3 text-gray-80 mb-5' />
+                <input type="text" value={formData.password} onChange={handleChange} name="password" placeholder="Password" className='border-1 border-gray-600 hover:border-purple-700 rounded-md lg:w-110 w-90 h-15 font-light p-3 text-gray-80 mb-5' />
 
-                <ButtonWidthPurples text={"Signup"} type='submit' />
+               <div className='hidden md:block'> <ButtonWidthPurples text={"Signup"} type='submit' /></div>
+               <div className='md:hidden w-90'> <Buttonss text={"Signup"} type='submit' /></div>
               </form>
 
             </div>
@@ -87,7 +88,7 @@ const Signup = () => {
           </div>
 
           <div className='mt-25'>
-            <img src={login} alt='img' className='rounded-3xl' />
+            <img src={login} alt='img' className='rounded-3xl hidden md:block' />
           </div>
         </div>
       </div>

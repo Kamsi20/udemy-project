@@ -24,7 +24,7 @@ const Download = () => {
       <div >
         <img src='/public/27.png' />
       </div>
-      <div className='flex gap-20 my-10 px-15'>
+      <div className='flex lg:flex-row flex-col gap-20 my-10 lg:px-15 px-7'>
         <div>
           <p className='font-bold text-lg mb-7'>Develop the workplace skills to keep pace with change. Focus on AI fluency and practice skills in the flow of work. Scale leadership, agency, and AI ethics, and prepare your teams for whatever comes after AI. Get the report to learn more.</p>
           <p className='text-lg mb-7'>
@@ -40,8 +40,8 @@ const Download = () => {
             </ol>
           </p>
         </div>
-        <div className='bg-gray-200 w-[450px] rounded-2xl  py-10'>
-          <form className='px-10' onSubmit={handleSubmit}>
+        <div className='bg-gray-200 lg:w-[450px] w-[390px] rounded-2xl  lg:py-10 py-5'>
+          <form className='lg:px-10 px-4' onSubmit={handleSubmit}>
             <h1 className='text-3xl font-bold '>Unlock the trends and skills data</h1>
             <input onChange={(e) => setText(e.target.value)}  value={text} type='text' id='text' placeholder='First Name*' className='text-bold border-1 border-black w-90 h-14 rounded-md bg-white my-5 p-4' required />
             <input type='text' id='text' placeholder='Last Name*' className='text-bold border-1 border-black w-90 h-14 rounded-md bg-white p-4' required />
@@ -54,7 +54,7 @@ const Download = () => {
           </form>
         </div>
       </div>
-      <div className='w-190 px-15'>
+      <div className='lg:w-190 lg:px-15 px-7'>
         <h1 className='text-4xl font-semibold mb-7'>AI fluency: Developing a new operating system</h1>
         <p className='text-xl'>Most organizations still talk about “AI skills” as if it is simply a matter of training people on tools, code, or data analysis. But the core challenge is not teaching people how to use the technology. Instead, it’s rewiring the enterprise to play, experiment, and find ways to incorporate AI into workflows. Then you will have the fluency to build not only a new culture but a new operating model and the new systems, learning content, and behaviors to continuously learn from AI, adapt with it, and lead through it.</p>
         <p className='text-2xl font-bold my-7'>Key ideas and data points:</p>

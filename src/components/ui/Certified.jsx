@@ -31,10 +31,10 @@ const Certified = () => {
   return (
 
 
-    <div className='lg:w-[1200px] mx-auto grid lg:grid-cols-5  lg:h-100 gap-5 bg-gray-900 text-white m-5 rounded-2xl py-20 px-15   reveal'>
-      <div className='lg:col-span-2'>
+    <div className='lg:w-[1200px] mx-auto grid lg:grid-cols-5  lg:h-100 gap-5 bg-gray-900 text-white m-5 rounded-2xl lg:py-20 py-10 px-15 mt-10  reveal'>
+      <div className='col-span-2'>
         <p className='text-3xl font-semibold'>Get certified and get ahead in your career</p>
-        <p className='mt-3 font-light mr-20 '> Prep for certifications with comprehensive courses, practice tests, and special offers on exam vouchers.</p>
+        <p className='mt-3 font-light mr-20 w-70 '> Prep for certifications with comprehensive courses, practice tests, and special offers on exam vouchers.</p>
         <div className='absolute mt-6 '  ><ButtonGray text={"Explore certifications and vouchers"} />
           <div className="relative ml-6 mt-2.5 float-right  font-extralight text-sm"><FaArrowRight size={10} /></div>
         </div>

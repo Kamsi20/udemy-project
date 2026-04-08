@@ -36,7 +36,7 @@ const Navbar = () => {
 
 
             <nav className=' flex justify-between items-center px-4 py-3'>
-                <div className='flex items-center gap-4'>
+                <div className=' flex items-center gap-4'>
                     <Link to={"/"} > <img src="logo.png" className="w-28 md:w-36" /></Link>
                     <Link to={"/learnmore"} className="hidden md:block"> <small>Explore</small></Link>
                     <div className="hidden md:flex  items-center gap-2 p-2 border border-gray-400 rounded-full">
@@ -78,10 +78,10 @@ const Navbar = () => {
                 </button>
             </nav>
             {open && (
-                <div className="md:hidden bg-white shadow-md flex flex-col items-center gap-4 py-4">
+                <div className="md:hidden bg-white shadow-md flex flex-col items-center gap-4 py-4 w-60 ml-50 ">
 
                     {/* Search */}
-                    <div className="flex w-[90%] items-center gap-2 p-2 border rounded-full">
+                    <div className="flex items-center gap-2 p-2 border rounded-full">
                         <FaSearch size={12} />
                         <input
                             type="search"
@@ -90,7 +90,7 @@ const Navbar = () => {
                         />
                     </div >
 
-                    <div  onClick={() => setOpen(!open)} className= ' flex flex-row gap-2'>
+                    <div  onClick={() => setOpen(!open)} className= ' flex flex-col gap-2  ml-30'>
                     
                     <Link to={"/learnmore"}>Explore</Link>
                         <Link to={"/aboutus"}>About Us</Link>
@@ -103,14 +103,16 @@ const Navbar = () => {
                     </div>
 
                     {user ? (
-                        <>
+                        <div className='ml-23'>
                             <Profile />
-                            <button onClick={handleLogout}>Log out</button>
-                        </>
+                            <button  onClick={handleLogout}>Log out</button>
+                        </div>
                     ) : (
-                        < div  onClick={() => setOpen(!open)} className='mx-3'>
-                            <Link to={"/signup"}>Sign up</Link>
-                            <Link to={"/login"}>Log in</Link>
+                        < div  onClick={() => setOpen(!open)} className='mx-3 '>
+                            <ul>
+                                <li className='ml-20'><Link to={"/signup"}>Sign up</Link></li>
+                                <li className='ml-20'> <Link to={"/login"}>Log in</Link></li>
+                            </ul>
                         </div>
                     )}
                 </div>

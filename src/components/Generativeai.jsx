@@ -1,5 +1,5 @@
 import React from 'react'
-import { ButtonWidthPurples } from './common/Button'
+import { ButtonWidthPurp, ButtonWidthPurples } from './common/Button'
 import { Link } from 'react-router-dom'
 import india from "/public/web.png"
 import indiaa from "/public/web2.png"
@@ -17,9 +17,9 @@ const Generativeai = () => {
         <p className='mb-15 ml-10'>Generative AI (GenAI) relates to  IT & Software, Businesses</p>
 
       </div>
-      <div className=' flex flex-row  border-1 border-gray-400 p-8 rounded-md'>
+      <div className=' flex lg:flex-row flex-col  border-1 border-gray-400 p-8 rounded-md'>
         <div>
-          <h2 className='text-xl font-semibold w-100'>Looking to advance your skills in Generative AI (GenAI)? We've got you.</h2> <br />
+          <h2 className='text-xl font-semibold lg:w-100'>Looking to advance your skills in Generative AI (GenAI)? We've got you.</h2> <br />
           <p className='font-semilight text-lg pr-10'>Get everything you need to reach your goals in one convenient bundle.</p><br />
           <ul className='font-light text-lg'>
 
@@ -32,9 +32,10 @@ const Generativeai = () => {
             <button className='bg-green-200 p-2 rounded-md text-sm font-semibold'>Special Bundle Price</button> <br />
           </div>
 
-          <Link to={"/cartcontent"}><ButtonWidthPurples text={"Add all to cart"} onclick={() => alert('Added to Cart!')} /></Link>
+          <div className='hidden md:block'><Link to={"/cartcontent"}><ButtonWidthPurples text={"Add all to cart"} onclick={() => alert('Added to Cart!')} /></Link></div>
+          <div className='ml-5 md:hidden'><ButtonWidthPurp text={"Add all to cart"} onclick={() => alert('Added to Cart!')}/></div>
         </div>
-        <div className='flex float-right gap-6 p-4'>
+        <div className='flex lg:flex-row flex-col float-right gap-6 p-4'>
           {
             Data.slice(0, 2).map((course) => (
               <Gencard key={course.courseId} course={course} />

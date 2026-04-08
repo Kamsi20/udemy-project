@@ -55,6 +55,11 @@ export const ButtonWidthPurp = ({text, onclick}) =>{
             {text}
         </button>
     }
+    export const Buttonss = ({text, onclick}) =>{
+        return <button onClick={onclick} className=" px-3 h-6 text-xs text-white hover:opacity-85 rounded-lg border-2 border-purple-800 bg-purple-800 font-semibold w-90 h-15 ">
+            {text}
+        </button>
+    }
 export const ButtonWidthPurpl = ({text, onclick}) =>{
     return <button onClick={onclick} className="py-2 w-65   text-white hover:opacity-85 rounded-md border-2 bg-purple-700 border-purple-700 font-semibold  ">
         {text}

@@ -49,7 +49,7 @@ const SingleCourse = () => {
 
               <div className="absolute right-10 top-10 w-[320px]">
 
-                <div className="sticky top-24 bg-white text-black shadow-md border p-5 rounded-3xl">
+                <div className="sticky top-24 hidden md:block bg-white text-black shadow-md border p-5 rounded-3xl">
 
                   <img
                     src={course.courseImage}
@@ -80,7 +80,7 @@ const SingleCourse = () => {
             </div>
           </div>
 
-          <div className="w-220">
+          <div className="lg:w-220">
 
 
             <div className="border-1 border-gray-300 p-6 mt-10">
@@ -127,7 +127,7 @@ const SingleCourse = () => {
 
               {course.courseContent.map((content, index) => (
                 <div key={index} className="border-1 border-gray-300   p-3">
-                  <h3 className="font-semibold bg-gray-300 h-15 py-3 px-7 rounded-2xl">{content.sectionTitle}</h3>
+                  <h3 className="font-semibold bg-gray-300 h-full py-3 px-7 rounded-2xl">{content.sectionTitle}</h3>
 
                   {content.lectures?.map((lecture, i) => (
                     <p key={i} className="text-gray-600 ml-4">
@@ -139,12 +139,12 @@ const SingleCourse = () => {
             </div>
 
             <div className="border-1 border-gray-300  p-6 mt-10 mb-5">
-              <h2 className="text-xl font-semibold mb-4">
+              <h2 className="text-xl font-semibold mb-4 ">
                 Who this course is for
               </h2>
 
               {course.whoCanTakeTheCourse.map((person, index) => (
-                <p key={index}>• {person}</p>
+                <p key={index}> <br/>  • {person}</p>
               ))}
             </div>
 

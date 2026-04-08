@@ -36,8 +36,8 @@ const Learn = () => {
   return (
     <div className='lg:w-[1300px] mx-auto grid lg:grid-cols-4 h-120 gap-5 p-10 lg:gap-5 mt-10 reveal'>
       <div className='col-span-1 w-100'>
-        <h1 className="lg:mt-30 mt-10 lg:w-40   font-semibold text-2xl">Learn essential career and life skills</h1>
-        <p className="font-light my-4">Kamsi helps you build in-demand skills fast and advance your career in a changing job market</p>
+        <h1 className="lg:mt-30 mt-10 lg:w-70   font-semibold text-2xl">Learn essential career and life skills</h1>
+        <h1 className="font-light my-4 lg:w-80 ">Kamsi helps you build in-demand skills fast and advance your career in a changing job market</h1>
       </div>
       <div className='col-span-3'>
         <div className="flex justify-center items-center gap-5 ">
@@ -73,9 +73,9 @@ const Learn = () => {
           </div>
 
           <div className="hidden md:grid grid-cols-3 gap-5 ">
-            <Card text="Generative AI" bg={heroImage} />
-            <Card text="IT certifications" bg={heroImage1} />
-            <Card text="Data Science" bg={heroImage2} />
+           <Link to={"generativeai"}> <Card text="Generative AI" bg={heroImage} /></Link>
+           <Link to={"itcertifications"}> <Card text="IT certifications" bg={heroImage1} /></Link>
+           <Link to={"dataScience"} > <Card text="Data Science" bg={heroImage2} /></Link>
           </div>
 
         </div>
