@@ -13,7 +13,7 @@ const SliderContent = ({topic, image, text}) => {
       <div className="lg:w-100 w-55  h-60  absolute left-10 top-10 bg-white lg:p-5 p-1 rounded-sm">
         <h1 className="font-bold lg:text-3xl">{topic}</h1>
         <p className="lg:my-3 my-1.5 text-sm leading-6">{text}</p>
-        <div className="flex gap-3">
+        <div className="flex gap-3 lg:text-lg text-sm">
          <Link to={"Learnmore"}> <Button text={"Get Personal Plan"} /></Link>
          <Link to={"LearnAI"}> <ButtonOutline text={"Learn AI"} /></Link>
         </div>
