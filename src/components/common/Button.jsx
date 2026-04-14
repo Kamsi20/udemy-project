@@ -1,6 +1,6 @@
 
 export const Button = ({text, onclick}) =>{
-    return <button onClick={onclick} className="py-2 px-3 text-xs text-white hover:opacity-85 rounded-lg border-2 border-purple-800 bg-purple-800 font-semibold ">
+    return <button onClick={onclick} className="py-2 lg:px-3 px-1.5 text-xs text-white hover:opacity-85 rounded-lg border-2 border-purple-800 bg-purple-800 font-semibold ">
         {text}
     </button>
 }
